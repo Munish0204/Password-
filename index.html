@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Tester</h1>
+        <input type="text" id="passwordInput" placeholder="Enter your password">
+        <button id="btn" onclick="audio.play();showPass();">Show</button>
+        <button id="chk" onclick="checkPasswordStrength();">Check</button>
+        <div id="strength">Strength: </div>
+        <div id="suggestion">Suggested Password: </div>
+    </div>
+
+   <script>
+     const audio = new Audio();
+    audio.src = "./Catoon2.mp3"
+   </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
